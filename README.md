@@ -1,6 +1,6 @@
 # HTML Transcripts
 
-A simple plugin for Discord Tickets which adds basics text transcripts.
+A fork of Discord Tickets text transcriptions plugin that transcripts the messages into an html file instead of raw text.
 
 ## Supported versions
 

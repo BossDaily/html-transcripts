@@ -1,4 +1,6 @@
 const DTF = require('@eartharoid/dtf');
+import express from 'express';
+
 const dtf = new DTF();
 const {
 	MessageAttachment,

@@ -34,7 +34,7 @@ Due to its simplicity, this plugin does not support localisation and is only ava
 2. Add `dsctickets.text-transcripts` to the `plugins` array in your bot's config file (`./user/config.js`):
 	```js
 	plugins: [
-		'dsctickets.text-transcripts'
+		'dsctickets-html-transcripts'
 	]
 	``` 
 3. Add a new property to your config file:

@@ -44,7 +44,7 @@ Due to its simplicity, this plugin does not support localisation and is only ava
 		defaults: {
 			// ...
 		},
-		'dsctickets.text-transcripts': {
+		'dsctickets-html-transcripts': {
 			channels: {
 				'<GUILD ID>': '<TEXT CHANNEL ID'
 			}

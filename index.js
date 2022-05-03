@@ -1,6 +1,5 @@
 const DTF = require("@eartharoid/dtf");
 import express from "express";
-
 const dtf = new DTF();
 const {
   MessageAttachment,
@@ -118,7 +117,9 @@ module.exports = (Plugin) =>
           )
           .replace(/{+\s?num(ber)?\s?}+/gi, ticket.number);
 
-        const attachment = new MessageAttachment(
+		const executor = new RawExecutor(`export -c ${ticket.channel_name} -t ${Client.token} -o ./html-export/%G/%C`)
+
+        const attachment = new MessageAttachment( 
           Buffer.from(lines.join("\n")),
           channel_name + ".txt"
         );

@@ -120,8 +120,8 @@ module.exports = (Plugin) =>
 		const executor = new RawExecutor(`export -c ${ticket.channel_name} -t ${Client.token} -o ./html-export/%G/%C`)
 
         const attachment = new MessageAttachment( 
-          Buffer.from(lines.join("\n")),
-          channel_name + ".txt"
+          `./html-export/${guild.name}/${channel_name}`,
+          channel_name + ".html"
         );
 
         if (this.config.channels[guild.id]) {
